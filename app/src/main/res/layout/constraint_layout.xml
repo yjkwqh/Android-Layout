@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED"
+        android:background="#DC143C"
+
+        />
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:background="#FFA500"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        android:background="#FFFF00"
+
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/B2"
+        app:layout_constraintBottom_toTopOf="@+id/B7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Blue"
+        android:textColor="#FFFFFF"
+        android:background="#0000FF"
+        />
+
+    <Button
+        android:id="@+id/B5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:text="GREEN"
+        app:layout_constraintRight_toLeftOf="@+id/B4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/B4"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4B0082"
+        android:text="Indigo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toRightOf="@+id/B4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/B4"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/B7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EE82EE"
+        android:text="Violet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
